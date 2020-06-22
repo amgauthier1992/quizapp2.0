@@ -1,7 +1,7 @@
-const QUIZ = [
+const QUIZ = {
 
 questions: [
-    {
+        {
         question: 'What is the capital city of Massachusetts?',
           answers: [
             'Worcester',
@@ -10,8 +10,8 @@ questions: [
             'Plymouth'
           ],
           correctAnswer: 'Boston'
-    },
-    {
+        },
+        {
           question: 'What is the capital city of California?',
           answers: [
             'Sacramento',
@@ -20,8 +20,8 @@ questions: [
             'San Francisco'
           ],
           correctAnswer: 'Sacramento'
-    },
-    {
+        },
+        {
           question: 'What is the capital city of Maine?',
           answers: [
             'Waterville',
@@ -30,8 +30,8 @@ questions: [
             'Portland'
           ],
           correctAnswer: 'Augusta'
-    },
-    {
+        },
+        {
           question: 'What is the capital city of South Dakota?',
           answers: [
             'Deadwood',
@@ -40,8 +40,8 @@ questions: [
             'Aberdeen'
           ],
           correctAnswer: 'Pierre'
-    },
-    {
+        },
+        {
           question: 'What is the capital city of Iowa?',
           answers: [
             'Iowa City',
@@ -50,8 +50,8 @@ questions: [
             'Des Moines'
           ],
           correctAnswer: 'Des Moines'
-    }
-],
+        }
+    ],
 
     quizStarted: false,
     questionNumber: 0,
