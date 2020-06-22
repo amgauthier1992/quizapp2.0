@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A multiple choice quiz designed to test your knowledge of the names of certain state's capital cities">
+        <title>United States Capital City Quiz</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header class="top-banner js-top-banner">
+            <h1>U.S. Capital City Quiz</h1>
+        </header>
+        <!--Main Content-->
+        <main aria-live="polite">
+            <!--Start Page-->
+            <h2>Think you're an expert when it comes to U.S. capital city trivia? Take the quiz and see if you're right!</h2>
+            <button type="button" class="start-button js-start-button">Start the Quiz</button>
+            <!--Question Page-->
+            <div class="question-number js-question-number">Question X out of 5</div>
+            <form class="quiz-form js-quiz-form">
+                <legend class="question js-question">What is the capital city of X?</legend>
+                    <input name="cityAnswer" type="radio" value="Boston" tabindex="1" required> 
+                    <label for="answer1">Boston</label><br>
+                    <input name="cityAnswer" type="radio" value="Sacramento" tabindex="2" required>
+                    <label for="answer2">Sacramento</label><br>
+                    <input name="cityAnswer" type="radio" value="Albany" tabindex="3" required> 
+                    <label for="answer3">Albany</label><br>
+                    <input name="cityAnswer" type="radio" value="Honolulu" tabindex="4" required> 
+                    <label for="answer4">Honolulu</label><br>
+                    <button type="button" class="submit-button js-submit-button">Submit</button>
+            </form>
+            <div class="score-tracker js-score-tracker">Score X out of 5</div>
+            <!--Answer Page-->
+            <h2>Correct/Incorrect!</h2>
+            <h3>The capital city is X</h3>
+            <div class="score-tracker js-score-tracker">Score X out of 5</div>
+            <button type="button" class="next-button js-next-button">Next Question</button>
+            <!--Completion Page-->
+            <h2>Congratulations! You have finished the quiz!</h2>
+            <h3>Your final score is:</h3>
+            <div class="score-tracker js-score-tracker">Score X out of 5</div>
+            <button type="button" class="restart-button js-restart-button">Restart Quiz</button>
+        </main>
+        <script src="quiz.js"></script>
+    </body>
+</html>
