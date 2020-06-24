@@ -21,7 +21,48 @@ main {
   justify-content: center;
 }
 
-/*Text Based Styles*/
+/* Buttons */
+
+button {
+    color:black;
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.next-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.restart-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+/* Inputs */
+
+label {
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+input {
+    transform: scale(2.0);
+}
+
+/* Text Based Styles */
 
 header h1 {
     text-align: center;
@@ -30,37 +71,27 @@ header h1 {
 
 .question-number {
     font-size: 1.8em;
+    margin-bottom: 8px;
 }
 
 .question {
     font-size: 1.6em;
+    margin-bottom: 8px;
 }
 
 .score-tracker {
     font-size: 1.6em;
 }
 
-label {
-    font-size: 1.5em;
-}
-
 h2 {
     font-size: 1.8em;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.6em;
 }
 
-button {
-    color:black;
-    padding: 8px;
-    font-size: 1.2em;
-}
-
-input {
-    transform: scale(2.0);
-}
 
 
 
