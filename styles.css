@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     color: black;
+    font-family: 'Cantata One', serif;
 }
 
 body {
@@ -24,8 +25,7 @@ main {
 /* Buttons */
 
 button {
-    color:black;
-    padding: 8px;
+    padding: 12px;
     margin-bottom: 5px;
     font-size: 1.2em;
 }

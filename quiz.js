@@ -75,7 +75,7 @@ function generateStartPage(){
 //This function will generate the question pages of the Quiz
 function generateQuestionPage(){
   return `
-    <div class="question-number js-question-number">Question ${QUIZ.questionNumber} out of 5</div>
+    <div class="question-number js-question-number">Question ${QUIZ.questionNumber} of 5</div>
     <form class="quiz-form js-quiz-form">
       <legend class="question js-question">What is the capital city of X?</legend>
         <input name="cityAnswer" type="radio" value="Boston" tabindex="1" required> 
@@ -97,7 +97,7 @@ function generateAnswerPage(){
   return `
     <h2>Correct/Incorrect!</h2>
     <h3>The capital city is X</h3>
-    <div class="score-tracker js-score-tracker">Score X out of 5</div>
+    <div class="score-tracker js-score-tracker">Score ${QUIZ.score} out of 5</div>
     <button type="button" class="next-button js-next-button">Next Question</button>
   `;
 }
@@ -153,6 +153,7 @@ function handleQuizStarted() {
   $('.js-start-button').on('click', function(event){
     console.log(`handleQuizStarted ran`);
     QUIZ.quizStarted = true;
+    QUIZ.questionNumber = 1;
     renderQuizApp();
   });
 }
@@ -161,10 +162,11 @@ function handleQuizStarted() {
 function handleQuestionSubmit() {
   //use event delegation first to target the main (parent element) rather than the class of the button or the form itself because all of these elements were not present on the 
   //initial page load. 
-  $('main').on('submit', '.js-quiz-form', function(event){
+  $('main').on('submit','.js-quiz-form', function(event){
     console.log(`handleQuestionSubmit ran`);
     event.preventDefault();
-
+    QUIZ.questionNumber++;
+    // console.log(QUIZ.questionNumber);
   });
 };
 
