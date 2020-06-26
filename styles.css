@@ -2,7 +2,10 @@
     box-sizing: border-box;
     color: black;
     font-family: 'Cantata One', serif;
-}
+ }
+
+/*smallest size: mobile device*/
+@media screen and (max-width: 480px) {
 
 body {
     margin: 0;
@@ -10,7 +13,8 @@ body {
     background: url('images/skyline.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    height: 667px;
+ }
 
 main {
   background-color: rgba(255,255,255,0.5);
@@ -20,7 +24,111 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ }
+
+/* Buttons */
+
+button {
+    padding: 12px;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+ }
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+.next-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+.restart-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+/* Inputs */
+
+label {
+    font-size: 1.4em;
+    margin-left: 5px;
+ }
+
+input {
+    transform: scale(2.0);
+    margin-bottom: 10px;
+ }
+
+/* Text Based Styles */
+
+header h1 {
+    text-align: center;
+    font-size: 2.3em;
+    padding-bottom: 15px;
+ }
+
+.question-number {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+ }
+
+.question {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+ } 
+
+.score-tracker {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+ }
+
+legend {
+    text-align: center;
 }
+
+input {
+    margin-left: 15px;
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+ }
+
+h3 {
+    font-size: 1.4em;
+    text-align: center;
+ }
+};
+
+/* medium size: tablet/iPad */
+@media screen and (min-width: 480px) {
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/skyline.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+main {
+    background-color: rgba(255,255,255,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
 
 /* Buttons */
 
@@ -28,70 +136,159 @@ button {
     padding: 12px;
     margin-bottom: 5px;
     font-size: 1.2em;
-}
+ }
 
 .submit-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-}
+ }
 
 .next-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-}
+ }
 
 .restart-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-}
+ }
 
 /* Inputs */
 
 label {
     font-size: 1.5em;
     margin-left: 5px;
-}
+ }
 
 input {
     transform: scale(2.0);
-}
+ }
 
 /* Text Based Styles */
 
 header h1 {
     text-align: center;
     font-size: 2.5em;
-}
+ }
 
 .question-number {
     font-size: 1.8em;
     margin-bottom: 8px;
-}
+ }
 
 .question {
     font-size: 1.6em;
     margin-bottom: 8px;
-}
+ } 
 
 .score-tracker {
     font-size: 1.6em;
-}
+ }
 
 h2 {
     font-size: 1.8em;
     text-align: center;
-}
+ }
 
 h3 {
     font-size: 1.6em;
-}
+ }
+};
 
+/* largest size: pc screen */
+@media screen and (min-width: 1024px) {
 
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/skyline.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
 
+main {
+    background-color: rgba(255,255,255,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
 
+/* Buttons */
+
+button {
+    padding: 12px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+ }
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+.next-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+.restart-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+ }
+
+/* Inputs */
+
+label {
+    font-size: 1.5em;
+    margin-left: 5px;
+ }
+
+input {
+    transform: scale(2.0);
+ }
+
+/* Text Based Styles */
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+ }
+
+.question-number {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+ }
+
+.question {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+ } 
+
+.score-tracker {
+    font-size: 1.6em;
+ }
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+ }
+
+h3 {
+    font-size: 1.6em;
+ }
+};

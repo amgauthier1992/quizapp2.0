@@ -110,7 +110,7 @@ function generateAnswerPage(){
   return `
     <h2>${isCorrect}</h2>
     <!--QUIZ.questionNumber = index 0-5-->
-    <h3>The capital city is ${QUIZ.questions[QUIZ.questionNumber-1].correctAnswer}</h3>
+    <h3>The capital city is: ${QUIZ.questions[QUIZ.questionNumber-1].correctAnswer}</h3>
     <div class="score-tracker js-score-tracker">Score ${QUIZ.score} out of 5</div>
     <button type="button" class="next-button js-next-button">Next Question</button>
   `;
